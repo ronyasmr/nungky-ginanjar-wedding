@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>N & G</title>
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.coundown.js"></script>
+</head>
+
+<body>
+
+  <audio id="myAudio" src="music/bg-music.mp3" preload="auto"></audio>
+
+  <!-- Begin Header -->
+  <div class="header-wrapper" id="home">
+    <!-- Begin Hero -->
+    <section class="hero is-large">
+      <!-- Begin Hero Content-->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="subtitle">Undangan Pernikahan dari</h1>
+          <h2 class="title">Nungky & Ginanjar</h2>
+          <h4 class="subtitle tempatwaktu">
+            Sabtu, 28 Januari 2023
+            </br>
+            Tegal Weru, Sariharjo, Ngaglik,
+            </br>
+            Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581
+          </h4>
+          <!-- <input type="button" value="♫" onClick="togglePlay(); location.href='#subm';"> -->
+          <button class="btn" onClick="togglePlay(); location.href='#subm';">
+            <span>Click Me</span>
+          </button>
+        </div>
+
+        <!-- Start Countdown -->
+        <div>
+          <ul id="hitungmundur">
+            <li><span class="days">00</span>
+              <p class="days_text">Hari</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="hours">00</span>
+              <p class="hours_text">Jam</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="minutes">00</span>
+              <p class="minutes_text">Menit</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="seconds">00</span>
+              <p class="seconds_text">Detik</p>
+            </li>
+          </ul>
+          <div class="spasi">
+          </div>
+          <script type="text/javascript">
+            var now = new Date();
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear() + 1;
+
+            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+            var harih = '01/28/2023 10:00:00';
+
+            $('#hitungmundur').countdown({
+              date: harih, // TODO Date format: 01/28/2023 10:00:00
+              offset: +7, // TODO Your Timezone Offset
+              day: 'Hari',
+              days: 'Hari'
+            });
+          </script>
+        </div>
+        <!-- End Countdown -->
+      </div>
+      <!-- End Hero Content-->
+
+      <!-- Begin Hero Menu -->
+      <div class="hero-foot" id="subm">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active">
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#Waktu">Waktu</a>
+                </li>
+                <li>
+                  <a href="#lokasi">Lokasi</a>
+                </li>
+                <!-- <li>
+                  <a href="#tentang-nungky-ginanjar">Tentang Nungky & Ginanjar</a>
+                </li> -->
+                <li>
+                  <a href="#rsvp">RSVP</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Menu -->
+    </section>
+    <!-- End Hero -->
+  </div>
+  <!-- End Header -->
+
+  <!-- Begin Main Content -->
+  <div class="main-content">
+    <!-- Begin regular-section-->
+    <div class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
+      id="regular-section">
+
+      <div data-aos="fade-in" data-aos-easing="linear">
+        <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+      </div>
+
+      <p class="bodytext" data-aos="fade-in" data-aos-easing="linear">
+        Assalamu'alaikum Warahmatullahi Wabarakatuh.
+        <br />
+        Dengan memohon rahmat dan ridha Allah swt,
+        <br />
+        kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
+      </p><br>
+
+      <div data-aos="fade-in" data-aos-easing="linear">
+        <div class="nama-lengkap">
+          Nungky Iswananda Wahhab, S.Pd.
+        </div>
+        Putri dari Bapak Iswahyudi dan Ibu Rini Suprapti A.Md.<br>
+        <div class="ampersand">&</div>
+        <div class="nama-lengkap">
+          Ginanjar Wismo Anugroho, S.Pd.
+        </div>
+        Putra dari Bapak Istochari dan Ibu Tumirah
+      </div>
+
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+      </div>
+    </div>
+    <!-- End regular-section-->
+
+    <!-- Begin Waktu Section -->
+    <div class="section-dark" id="Waktu">
+      <div class="waktu">
+        <div class="column is-12 regular-section">
+          <h1 class="title has-text-centered section-title">Waktu</h1>
+        </div>
+        <div class="columns is-multiline">
+          <div class="column is-4 has-vertically-aligned-content" data-aos="fade-right">
+            <p class="is-larger has-text-centered">
+            <div class="waktu tanggal-hari has-text-centered">Sabtu</div>
+            <div class="waktu tanggal-angka has-text-centered">28</div>
+            <div class="waktu tanggal-bulan has-text-centered">Januari 2023</div>
+            </p>
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content" data-aos="fade-in" data-aos-easing="linear">
+            <p class="waktu is-larger has-text-centered">
+              Akad Nikah/Resepsi:
+              <br>
+              <strong>07.00 WIB | 09.00 - 11.00 WIB</strong>
+            </p>
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content" data-aos="fade-left">
+            <h1 class="waktu is-larger has-text-centered">
+              Ngunduh Mantu:
+              <br>
+              <strong>10.00 WIB, 04 Februari 2023</strong>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Waktu Content -->
+
+    <!-- Begin Lokasi Section -->
+    <div class="section-light" id="lokasi">
+      <div class="container">
+        <div class="column is-12 regular-section">
+          <h1 class="title has-text-centered section-title" data-aos="fade-in" data-aos-easing="linear">Lokasi</h1>
+          <p class="tempat is-larger has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <strong>Akad Nikah/Resepsi</strong>
+            <br>
+            Tegal Weru, RT 005 RW 014 Sariharjo, Ngaglik,
+            <br>
+            Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581
+            <br>
+          </p>
+        </div>
+        <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.6258657528574!2d110.37299441477775!3d-7.7232293944330275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5ba87dd3b0cf50b!2zN8KwNDMnMjMuNiJTIDExMMKwMjInMzAuNyJF!5e0!3m2!1sen!2sid!4v1673884719095!5m2!1sen!2sid"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div><br>
+        <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://www.google.com/maps/place/7%C2%B043'23.6%22S+110%C2%B022'30.7%22E/@-7.7232294,110.3729944,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa5ba87dd3b0cf50b!8m2!3d-7.7232294!4d110.3751831"
+            class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <i class="far fa-directions"></i>
+            &nbsp;&nbsp;Google Maps
+          </a>
+
+          <div data-aos="fade-up" data-aos-easing="linear">
+            <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+          </div>
+
+          <p class="tempat is-larger has-text-centered">
+            <strong>Ngunduh Mantu</strong>
+            <br>
+            Seandong, RT 002 RW 001 Blederan, Mojotengah,
+            <br>
+            Kabupaten Wonosobo, Jawa Tengah 563
+            <br>
+          </p>
+        </div>
+        <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3877321644277!2d109.91059211477521!3d-7.310264594724052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda76f2cb77d9a86c!2zN8KwMTgnMzcuMCJTIDEwOcKwNTQnNDYuMCJF!5e0!3m2!1sen!2sid!4v1673874525042!5m2!1sen!2sid"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div><br>
+        <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://www.google.com/maps/place/7%C2%B018'37.0%22S+109%C2%B054'46.0%22E/@-7.3102646,109.9105921,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xda76f2cb77d9a86c!8m2!3d-7.3102646!4d109.9127808"
+            class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <i class="far fa-directions"></i>
+            &nbsp;&nbsp;Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Lokasi Content -->
+
+    <!-- Begin Foto -->
+    <div class="section-dark foto-foto" id="foto">
+      <div class="container">
+        <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
+          <div class="column is-12">
+            <h1 class="title has-text-centered section-title">Foto-foto</h1>
+          </div>
+          <div class="column is-6" data-aos="fade-up" data-aos-easing="linear">
+            <a href="#">
+              <figure class="image is-2by1 foto-item" style="background-image: url('image/pict/1.jpg');"></figure>
+            </a>
+          </div>
+          <div class="column is-6" data-aos="fade-up" data-aos-easing="linear">
+            <a href="#">
+              <figure class="image is-2by1 foto-item" style="background-image: url('image/pict/2.jpg');"></figure>
+            </a>
+          </div>
+          <div class="column is-6" data-aos="fade-up" data-aos-easing="linear">
+            <a href="#">
+              <figure class="image is-2by1 foto-item" style="background-image: url('image/pict/3.jpg');"></figure>
+            </a>
+          </div>
+          <div class="column is-6" data-aos="fade-up" data-aos-easing="linear">
+            <a href="#">
+              <figure class="image is-2by1 foto-item" style="background-image: url('image/pict/4.JPG');"></figure>
+            </a>
+          </div>
+          <div class="column is-6" data-aos="fade-up" data-aos-easing="linear">
+            <a href="#">
+              <figure class="image is-2by1 foto-item" style="background-image: url('image/pict/5.JPG');"></figure>
+            </a>
+          </div>
+          <div class="column is-6" data-aos="fade-up" data-aos-easing="linear">
+            <a href="#">
+              <figure class="image is-2by1 foto-item" style="background-image: url('image/pict/6.jpg');"></figure>
+            </a>
+          </div>
+          <div class="column is-6" data-aos="fade-up" data-aos-easing="linear">
+            <a href="#">
+              <figure class="image is-2by1 foto-item" style="background-image: url('image/pict/7.jpg');"></figure>
+            </a>
+          </div>
+          <div class="column is-6" data-aos="fade-up" data-aos-easing="linear">
+            <a href="#">
+              <figure class="image is-2by1 foto-item" style="background-image: url('image/pict/8.jpg');"></figure>
+            </a>
+          </div>
+
+          <div class="column is-12" data-aos="fade-up" data-aos-easing="linear">
+            <video width="100%" controls>
+              <source src="image/vid.mp4" type="video/mp4">
+              <source src="image/vid.mp4" type="video/ogg">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Work Content -->
+
+
+    <!-- Begin Tentang Nungky and Ginanjar -->
+    <div class="section-light regular-section" id="tentang-nungky-ginanjar">
+      <div class="container" data-aos="fade-in" data-aos-easing="linear">
+        <div class="column is-12 prolog">
+          <h1 class="title has-text-centered section-title">Hadiah Pernikahan</h1>
+        </div>
+        <div class="regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+          <p class="bodytext" data-aos="fade-in" data-aos-easing="linear">
+            Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda
+            kasih Anda, Anda dapat memberi kado secara cashless dan kami akan senang hati menerimanya dan tentu semakin
+            melengkapi kebahagiaan kami.
+          </p>
+        </div>
+        <div class="regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+          <div data-aos="fade-up" data-aos-easing="linear">
+            <img src="image/bm.png" style="width: 30vw;" class="has-text-centered" alt="~~~">
+          </div>
+
+          <p class="bodytext">
+            Nomor Rekening
+          <h1 id="p1"></h1> <button class="btnc" onclick="copyToClipboard('#p1')">1370021185992</button></h1>(Klik Nomor
+          Rekening untuk Menyalin)<br><br>
+          a.n <b>Nungky Iswananda Wahhab</b>
+          </p>
+        </div>
+
+        <script>
+          function myFunction() {
+            // Get the text field
+            var copyText = document.getElementById("myInput");
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+
+            // Alert the copied text
+            alert("Copied the text: " + copyText.value);
+          }
+        </script>
+
+        <div class="columns">
+          <div class="column is-6">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Tentang Nungky dan Ginanjar -->
+
+    <!-- Begin RSVP Content -->
+    <div class="section-dark contact" id="rsvp">
+      <div class="container">
+        <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
+          <div class="column is-12 prolog">
+            <h1 class="title has-text-centered section-title">Konfirmasi Kehadiran</h1>
+          </div>
+          <div class="column is-12 prolog has-text-centered">
+
+            <a href="https://api.whatsapp.com/send?phone=62882007973152&text=Halo%20Nungky,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data="
+              class="button btn-whatsapp" data-aos="fade-right">
+              <i class=" fab fa-whatsapp"></i>
+              &nbsp;&nbsp;Kabari Nungky
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=6285727744696&text=Halo%20Ginanjar,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data="
+              class="button btn-whatsapp" data-aos="fade-left">
+              <i class="fab fa-whatsapp"></i>
+              &nbsp;&nbsp; Kabari Ginanjar
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End RSVP Content -->
+  </div>
+  <!-- End Main Content -->
+
+  <!-- Begin Footer -->
+  <div class="footer">
+    <div class="container">
+      <p class="has-vertically-align">2023 &copy MiURA</p>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menikah.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-out",
+      duration: 800,
+    });
+
+    var myAudio = document.getElementById("myAudio");
+
+    function togglePlay() {
+      return myAudio.paused ? myAudio.play() : myAudio.pause();
+    };
+
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
+</body>
+
+</html>
